@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DigiStack Solutions - Engineering Resilience</title>
+    <meta name="description"
+        content="Enterprise-grade cloud infrastructure, DevOps engineering, and managed services for the modern enterprise.">
+
+    <!-- CSS Dependencies -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <!-- Will add animations and responsive later if needed separately, but base/components cover most -->
+
+    <!-- Favicon -->
+    <!-- <link rel="icon" href="assets/favicon.ico"> -->
+</head>
+
+<body class="bg-grid">
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container navbar-container">
+            <!-- Logo -->
+            <a href="index.html" class="logo">
+                <img src="logo/digi (1).png" alt="DigiStack Logo" style="height: 130px; width: auto;">
+            </a>
+
+            <!-- Desktop Links -->
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="services.html" class="nav-link">IT Services</a>
+                <a href="cloud-devops.html" class="nav-link">Cloud & DevOps</a>
+                <a href="delivery-model.html" class="nav-link">Delivery Model</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">
+                    <div id="theme-icon">
+                        <!-- Default Moon Icon (will be replaced by JS) -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-moon">
+                            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+                        </svg>
+                    </div>
+                </button>
+                <a href="contact.html" class="btn btn-primary">Consultation</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-btn" aria-label="Menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-menu">
+                    <line x1="4" x2="20" y1="12" y2="12" />
+                    <line x1="4" x2="20" y1="6" y2="6" />
+                    <line x1="4" x2="20" y1="18" y2="18" />
+                </svg>
+            </button>
+        </div>
+        <!-- Scroll Progress -->
+        <div class="scroll-progress"></div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="section flex flex-col items-center justify-center text-center"
+        style="min-height: 90vh; position: relative; overflow: hidden;">
+        <canvas id="particle-canvas"
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; pointer-events: none;"></canvas>
+
+        <div class="container" style="position: relative; z-index: 1;">
+            <p class="text-secondary"
+                style="font-size: 1.1rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.15em; margin-bottom: var(--space-4); color: var(--accent-primary);">
+                Premium Cloud Infrastructure</p>
+            <h1
+                style="font-size: clamp(2.5rem, 5vw, 3.75rem); line-height: 1.1; max-width: 900px; margin: 0 auto var(--space-6) auto;">
+                Engineering <span style="color: var(--accent-primary);">Resilience</span><br> for the Modern Enterprise
+            </h1>
+            <p
+                style="font-size: 1.125rem; line-height: 1.6; max-width: 700px; margin: 0 auto var(--space-8) auto; color: var(--text-secondary);">
+                We deliver premium cloud infrastructure, DevOps automation, and managed IT services. Built for scale,
+                security, and operational excellence.
+            </p>
+
+            <div class="flex gap-4 justify-center" style="margin-bottom: var(--space-12);">
+                <a href="contact.html" class="btn btn-primary btn-magnetic">Schedule Consultation</a>
+                <a href="services.html" class="btn btn-outline btn-magnetic">Explore Capabilities</a>
+            </div>
+
+            <!-- Tech Stack Bar -->
+            <div class="flex flex-col items-center gap-4" style="opacity: 0.8;">
+                <p
+                    style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-secondary);">
+                    Enterprise Technology Stack</p>
+                <div class="flex gap-8 items-center flex-wrap justify-center font-semibold text-secondary">
+                    <span>AWS</span>
+                    <span>Azure</span>
+                    <span>Kubernetes</span>
+                    <span>Terraform</span>
+                    <span>Docker</span>
+                    <span>Linux</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Value Proposition Section -->
+    <section class="section">
+        <div class="container">
+            <div class="text-center" style="margin-bottom: var(--space-12);">
+                <h2 class="animate-on-scroll">Infrastructure as a <br> <span
+                        style="color: var(--accent-primary);">Competitive Advantage</span></h2>
+            </div>
+
+            <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--space-6);">
+                <!-- Bento Grid Implementation -->
+                <!-- Large Card -->
+                <div class="tilt-card card glass-card animate-on-scroll"
+                    style="grid-column: span 1; min-height: 400px; display: flex; flex-direction: column; justify-content: space-between; overflow: hidden; position: relative;">
+                    <!-- Background Icon Watermark -->
+                    <div
+                        style="position: absolute; right: -20px; bottom: -20px; opacity: 0.05; color: var(--text-primary);">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-cloud">
+                            <path
+                                d="M17.5 19c0-1.7-1.3-3-3-3h-1.1c-.2-3.6-2.9-6-6.4-6-3.8 0-7.3 2.7-7.3 7 0 3.8 2.8 7.3 7 7.3h10.8c2.4 0 4.2-2.1 4.2-4.5 0-2.3-1.8-4.2-4.2-4.8" />
+                        </svg>
+                    </div>
+
+                    <div>
+                        <div
+                            style="background: var(--blue-100); width: fit-content; padding: 12px; border-radius: 12px; margin-bottom: var(--space-4); color: var(--accent-primary);">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-cloud">
+                                <path
+                                    d="M17.5 19c0-1.7-1.3-3-3-3h-1.1c-.2-3.6-2.9-6-6.4-6-3.8 0-7.3 2.7-7.3 7 0 3.8 2.8 7.3 7 7.3h10.8c2.4 0 4.2-2.1 4.2-4.5 0-2.3-1.8-4.2-4.2-4.8" />
+                            </svg>
+                        </div>
+                        <h3>Cloud Native Architecture</h3>
+                        <p>Scalable, resilient, and cost-effective cloud solutions designed for the modern enterprise.
+                        </p>
+                    </div>
+
+                    <div class="grid" style="grid-template-columns: 1fr 1fr; gap: var(--space-2);">
+                        <div
+                            style="background: rgba(37, 99, 235, 0.1); padding: 8px 12px; border-radius: 8px; font-size: 0.9rem; font-weight: 500;">
+                            Multi-Region HA</div>
+                        <div
+                            style="background: rgba(37, 99, 235, 0.1); padding: 8px 12px; border-radius: 8px; font-size: 0.9rem; font-weight: 500;">
+                            Auto-Scaling</div>
+                        <div
+                            style="background: rgba(37, 99, 235, 0.1); padding: 8px 12px; border-radius: 8px; font-size: 0.9rem; font-weight: 500;">
+                            Serverless</div>
+                        <div
+                            style="background: rgba(37, 99, 235, 0.1); padding: 8px 12px; border-radius: 8px; font-size: 0.9rem; font-weight: 500;">
+                            Microservices</div>
+                    </div>
+                </div>
+
+                <!-- Right Column Stack -->
+                <div class="flex flex-col gap-6" style="grid-column: span 1;">
+                    <!-- Small Card 1 -->
+                    <div class="tilt-card card glass-card animate-on-scroll delay-100" style="flex: 1;">
+                        <div
+                            style="background: rgba(239, 68, 68, 0.1); width: fit-content; padding: 12px; border-radius: 12px; margin-bottom: var(--space-4); color: #ef4444;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-shield-check">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10" />
+                                <path d="m9 12 2 2 4-4" />
+                            </svg>
+                        </div>
+                        <h3>Security by Design</h3>
+                        <p>Zero-trust architecture and SOC2 compliance built into every layer.</p>
+                    </div>
+
+                    <!-- Small Card 2 -->
+                    <div class="tilt-card card glass-card animate-on-scroll delay-200" style="flex: 1;">
+                        <div
+                            style="background: rgba(16, 185, 129, 0.1); width: fit-content; padding: 12px; border-radius: 12px; margin-bottom: var(--space-4); color: #10b981;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-activity">
+                                <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                            </svg>
+                        </div>
+                        <h3>Operational Excellence</h3>
+                        <p>24/7 reliability engineering with 99.99% uptime commitment.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Global Impact Stats -->
+    <section class="section" style="padding-top: 0;">
+        <div class="container">
+            <div class="text-center" style="margin-bottom: var(--space-12);">
+                <p class="text-secondary" style="font-weight: 600; text-transform: uppercase;">Our Global Impact</p>
+            </div>
+
+            <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: var(--space-6);">
+                <div class="card glass-card text-center animate-on-scroll delay-100"
+                    style="border-radius: var(--radius-lg);">
+                    <div style="font-size: 2.5rem; margin-bottom: var(--space-2);">⚡</div>
+                    <h3 style="margin-bottom: 0;">10M+</h3>
+                    <p style="font-size: 0.875rem; text-transform: uppercase;">Requests / sec</p>
+                </div>
+
+                <div class="card glass-card text-center animate-on-scroll delay-200"
+                    style="border-radius: var(--radius-lg);">
+                    <div style="font-size: 2.5rem; margin-bottom: var(--space-2);">🛡️</div>
+                    <h3 style="margin-bottom: 0;">99.99%</h3>
+                    <p style="font-size: 0.875rem; text-transform: uppercase;">Uptime SLA</p>
+                </div>
+
+                <div class="card glass-card text-center animate-on-scroll delay-300"
+                    style="border-radius: var(--radius-lg);">
+                    <div style="font-size: 2.5rem; margin-bottom: var(--space-2);">🌐</div>
+                    <h3 style="margin-bottom: 0;">50+</h3>
+                    <p style="font-size: 0.875rem; text-transform: uppercase;">Data Centers</p>
+                </div>
+                <div class="card glass-card text-center animate-on-scroll delay-300"
+                    style="border-radius: var(--radius-lg);">
+                    <div style="font-size: 2.5rem; margin-bottom: var(--space-2);">👨‍💻</div>
+                    <h3 style="margin-bottom: 0;">24/7</h3>
+                    <p style="font-size: 0.875rem; text-transform: uppercase;">Expert Support</p>
+                </div>
+                <div class="card glass-card text-center animate-on-scroll delay-300"
+                    style="border-radius: var(--radius-lg);">
+                    <div style="font-size: 2.5rem; margin-bottom: var(--space-2);">🔒</div>
+                    <h3 style="margin-bottom: 0;">Zero</h3>
+                    <p style="font-size: 0.875rem; text-transform: uppercase;">Security Breaches</p>
+                </div>
+                <div class="card glass-card text-center animate-on-scroll delay-300"
+                    style="border-radius: var(--radius-lg);">
+                    <div style="font-size: 2.5rem; margin-bottom: var(--space-2);">🏗️</div>
+                    <h3 style="margin-bottom: 0;">100+</h3>
+                    <p style="font-size: 0.875rem; text-transform: uppercase;">Certified Architects</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section" style="background-color: var(--slate-900); color: white; padding: var(--space-24) 0;">
+        <div class="container text-center">
+            <h2 style="color: white; margin-bottom: var(--space-6);">Ready to modernize your infrastructure?</h2>
+            <p style="color: var(--slate-300); max-width: 600px; margin: 0 auto var(--space-8) auto;">
+                Schedule a technical review with our architects to identify optimization opportunities and security
+                gaps.
+            </p>
+            <a href="contact.html" class="btn btn-primary btn-magnetic"
+                style="padding: 1rem 2rem; font-size: 1.1rem;">Book a Technical Review</a>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="js/theme.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/canvas-particles.js"></script>
+    <script src="js/magnetic-button.js"></script>
+    <script src="js/tilt-card.js"></script>
+    <script src="js/scroll-animations.js"></script>
+
+</body>
+
+</html>
